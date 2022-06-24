@@ -1,25 +1,73 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.23
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT", "IT\IT.csproj", "{0B32D01F-F59F-4607-BE82-481B7EB9F8FC}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B32D01F-F59F-4607-BE82-481B7EB9F8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B32D01F-F59F-4607-BE82-481B7EB9F8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B32D01F-F59F-4607-BE82-481B7EB9F8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B32D01F-F59F-4607-BE82-481B7EB9F8FC}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {31C7357D-3CAD-43BC-8467-17D500697358}
-	EndGlobalSection
-EndGlobal
+using System;
+
+namespace IT
+{
+    class Program
+    {
+        static void Task1()
+        {
+            Console.Write("Enter hours:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("minutes:" + a*60);
+        }
+        static void Task2()
+        {
+            Console.Write("Enter a:");
+            
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter b:");
+            float b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Result:");
+            Console.WriteLine(5*a+b*b/b-a);
+        }
+        static void Task3()
+        {
+            Console.Write("Enter a:");
+            string a = Convert.ToString(Console.ReadLine());
+            Console.Write("Enter b:");
+            string b = Convert.ToString(Console.ReadLine());
+            string c=a;
+            a = b;
+            b = c;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+        static void Task4()
+        {
+            Console.Write("Enter a:");
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter b:");
+            float b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Division:");
+            Console.WriteLine(a/b);
+            Console.Write("Reminder of division:");
+            Console.WriteLine(a%b);
+        }
+        static void Task5()
+        {
+            Console.WriteLine("Enter a,b,c");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Result:");
+            Console.WriteLine(c-b/a);
+        }
+        static void Task6()
+        {
+            Console.WriteLine("Enter y1,y2,x1,x2");
+            int y1 = Convert.ToInt32(Console.ReadLine());
+            int y2= Convert.ToInt32(Console.ReadLine());
+            int x1 = Convert.ToInt32(Console.ReadLine());
+            int x2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("y=ax+b");
+            Console.WriteLine(y2 - y1 / x1 - x2);
+            Console.WriteLine(x2*y1-x1*y2/x1-x2);
+            
+        }
+        static void Main(string[] args)
+        {
+            Task6();
+        }
+    }
+}
