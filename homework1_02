@@ -1,0 +1,16 @@
+﻿using System;
+
+namespace homework1_02
+{
+    class Program
+    {
+        static int ConvertMinutesIntoHours(int a)
+        {
+            return a;
+        }
+        static void Main(string[] args)
+        {
+            ConvertMinutesIntoHours(2);
+        }
+    }
+}
